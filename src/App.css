@@ -1,0 +1,28 @@
+.container {
+  width: 992px;
+  max-width: 98%;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 10px 32px;
+  border: 1px solid #000;
+  color: #000;
+  font-weight: 600;
+  font-size: 18px;
+}
+.btn:hover {
+  cursor: pointer;
+  background: #949292;
+  box-shadow: 6px 6px 13px rgba(0, 0, 0, 0.158);
+}
+
+.checkText {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  text-shadow: 3px 2px 0px #00000060;
+}
+.bg-green {
+  background: red;
+}
