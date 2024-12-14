@@ -11,11 +11,6 @@ const data = [
     serialNumber: 2,
     counter: 0,
   },
-  {
-    id: 3,
-    serialNumber: 3,
-    counter: 0,
-  },
 ];
 
 export default function CounterList() {
@@ -60,7 +55,7 @@ export default function CounterList() {
 
   return (
     <div className="container mx-auto ">
-      <div className="mt-8 flex justify-between">
+      <div className="mt-8 flex flex-wrap gap-2 justify-between">
         <button
           onClick={handleReset}
           className="text-lg font-semibold border border-red-600 rounded-lg py-1 px-6 hover:bg-red-600 hover:text-white transition-all"
@@ -78,7 +73,7 @@ export default function CounterList() {
           Total Counter : {totalCount}
         </h3>
       </div>
-      <div className="grid grid-cols-3 gap-5 mt-8">
+      <div className="grid sm:grid-cols-3 grid-cols-1 gap-5 mt-8">
         {counterArray.map((item) => (
           <Counter
             key={item.id}
